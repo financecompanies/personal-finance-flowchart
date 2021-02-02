@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Personal Finance Flowchart</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="FIRE, FIRE UK, FIREUK, Financial Independence, Retiring Early, Retirement Early, FIREUK, Financial Flowchart, Flowchart, Money, Advice, UKPersonalFinance, Personal Finance, Reddit, GitHub">
+  <meta name="author" content="Marcus Michaels">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+  <script defer type="text/javascript" src="main.js"></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110193406-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-110193406-1');
+  </script>
+
+</head>
+<body>
+  <section class="overview">
+    <div class="overview__step step-0 blue">
+      <p>
+        <strong>Step 0:</strong> <a href="https://ukpersonal.finance/budgeting/" target="_blank" title="Creating a Budget">Budget</a> and reduce expenses, set realistic goals
+      </p>
+    </div>
+    <div class="overview__step step-1 yellow">
+      <p>
+        <strong>Step 1:</strong> Build a small <a href="https://www.reddit.com/r/personalfinance/wiki/emergencyfunds" title="Emergency Fund" target="_blank">Emergency Fund<br>(1-3 months)</a>
+      </p>
+    </div>
+    <div class="overview__step step-2 grey">
+      <p>
+        <strong>Step 2:</strong> Automatic Enrolment Pension
+      </p>
+    </div>
+    <div class="overview__step step-3 green">
+      <p>
+        <strong>Step 3:</strong> Build a full <a href="https://www.reddit.com/r/personalfinance/wiki/emergencyfunds" title="Emergency Fund" target="_blank">Emergency Fund<br>(3-12 months)</a>
+      </p>
+    </div>
+    <div class="overview__step step-4 purple">
+      <p>
+        <strong>Step 4:</strong> Pay down debts
+      </p>
+    </div>
+    <div class="overview__step step-5 orange">
+      <p>
+        <strong>Step 5:</strong> Save for short-term goals<br>(&lt;5 years)
+      </p>
+    </div>
+    <div class="overview__step step-6 red">
+      <p>
+        <strong>Step 6:</strong> Invest for long-term goals<br>(&gt;5years)
+      </p>
+    </div>
+  </section>
+
+  <section id="intro">
+    <div class="intro__small-rectangle" onclick="hideLaterPhases(this, intro); showPhase(phaseOne);">
+      <p>
+        Start Flowchart
+      </p>
+    </div>
+  </section>
+
+  <section id="phase-one" class="flow-container">
+    <div class="flow-container__large-rectangle blue arrow-down">
+      <p>
+        Know where your money is going by creating a <a href="https://ukpersonal.finance/budgeting/" target="_blank" title="Creating a Budget">solid budget plan</a>
+      </p>
+    </div>
+    <div class="flow-container__small-rectangle blue arrow-down">
+      <p>
+        Check your state supported entitlement at <a href="https://www.entitledto.co.uk/" target="_blank" title="Independent benefit entitlement calculator">entitledto.co.uk</a>
+      </p>
+    </div>
+    <div class="flow-container__small-rectangle blue arrow-down">
+      <p>
+        <strong>Pay essential bills:</strong>
+        <ul>
+          <li>Food</li>
+          <li>Rent/Mortgage</li>
+          <li>Council Tax</li>
+        </ul>
+        <a href="https://www.moneysavingexpert.com/family/money-help/" target="_blank" title="Money Saving Expert Money Makeover">Find more advice on MSE</a>
+      </p>
+    </div>
+    <div class="flow-container__small-rectangle blue arrow-down">
+      <p>
+        Pay Income Earning Expenses<br>(e.g. transport to work)
+      </p>
+    </div>
+    <div class="flow-container__small-rectangle blue arrow-down">
+      <p>
+        Make minimum payments on all debts
+      </p>
+    </div>
+    <div class="flow-container__small-rectangle blue arrow-down">
+      <p>
+        Insure what you can't afford to replace such as:
+        <ul>
+          <li>Home, Car, Life, Income, etc.</li>
+        </ul>
+        <a href="https://ukpersonal.finance/insurance/" target="_blank" title="More information about insurance">Read more about insurance</a>
+      </p>
+    </div>
+    <div class="flow-container__small-rectangle blue arrow-down">
+      <p>
+        Pay non-essential bills in full<br>(Internet, Phone, TV)
+      </p>
+    </div>
+    <div id="question-1" class="flow-container__large-rectangle purple">
+      <p>
+        <strong>Are you reliant on credit to make ends meet?</strong>
+      </p>
+      <div class="choices">
+        <div class="choice" onclick="hideLaterPhases(this, phaseOne); showPhase(phaseTwo)">Yes</div>
+        <div class="choice" onclick="hideLaterPhases(this, phaseOne); showPhase(phaseThree)">No</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="phase-two" class="flow-container">
+    <div class="flow-container__small-rectangle purple arrow-down">
+      <p>
+        Seek debt councelling from a reputable charity.
+        <br><br>
+        <a href="https://www.stepchange.org/" target="_blank" title="Get free debt advice from Step Change">Visit stepchange.org</a>
+      </p>
+    </div>
+
+    <div class="flow-container__large-rectangle purple choice" onclick="hideLaterPhases(this, phaseTwo); continueFlow(this, phaseThree)">
+      <p>
+        Okay, what's next?
+      </p>
+    </div>
+  </section>
+
+  <section id="phase-three" class="flow-container">
+    <div class="flow-container__small-rectangle yellow arrow-down">
+      <p>
+        Build a small <a href="https://www.reddit.com/r/personalfinance/wiki/emergencyfunds" title="Emergency Fund" target="_blank">Emergency Fund</a><br>(1-3 months of outgoings)
+      </p>
+    </div>
+    <div class="flow-container__small-rectangle grey arrow-down">
+      <p>
+        Ensure you are (auto)enrolled in company pension.<br><br>
+        Take advantage of matched contributions or any other available company contributions.
+      </p>
+    </div>
+    <div id="question-2" class="flow-container__large-rectangle purple">
+      <p>
+        Do you have any high interest (4%+ PA) debt?<br>(excl. student loans)
+      </p>
+      <div class="choices">
+        <div class="choice" onclick="hideLaterPhases(this, phaseThree); showPhase(phaseFour)">Yes</div>
+        <div class="choice" onclick="hideLaterPhases(this, phaseThree); showPhase(phaseFive)">No</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="phase-four" class="flow-container">
+    <div class="flow-container__small-rectangle purple arrow-down">
+      <p>
+        Pay off high-interest debt using a debt-management method such as Avalance (highest SPR debt first, more efficient), or Snowball (smallest debt first, less efficient but with possible psychological benefits)
+        <br><br>
+        <a href="https://www.reddit.com/r/personalfinance/wiki/debt#wiki_what.27s_the_best_way_to_pay_down_my_debt.3F" target="_blank" title="More information on debt-management methods for paying off debt">Find out more on each method here</a>
+      </p>
+    </div>
+
+    <div class="flow-container__large-rectangle purple choice" onclick="hideLaterPhases(this, phaseFour); continueFlow(this, phaseFive)">
+      <p>
+        Sure, then what?
+      </p>
+    </div>
+
+  </section>
+
+  <section id="phase-five" class="flow-container">
+    <div class="flow-container__small-rectangle yellow arrow-down">
+      <p>
+        Build a full <a href="https://www.reddit.com/r/personalfinance/wiki/emergencyfunds" title="Emergency Fund" target="_blank">Emergency Fund</a><br>(3-12 months of outgoings)
+      </p>
+    </div>
+    <div id="question-3" class="flow-container__large-rectangle orange">
+      <p>
+        Are you saving to buy your FIRST home?
+      </p>
+      <div class="choices">
+        <div class="choice" onclick="hideLaterPhases(this, phaseFive); showPhase(phaseSix)">Yes</div>
+        <div class="choice" onclick="hideLaterPhases(this, phaseFive); showPhase(phaseSeven)">No</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="phase-six" class="flow-container">
+    <div class="flow-container__small-rectangle orange arrow-down">
+      <p>
+        Consider opening a <a href="https://ukpersonal.finance/lisa/" target="_blank" title="Find out more about Lifetime ISAs">Lifetime ISA (LISA)</a>
+      </p>
+    </div>
+    <div class="flow-container__large-rectangle orange choice" onclick="hideLaterPhases(this, phaseSix); continueFlow(this, phaseSeven)">
+      <p>
+        I'll look into it. What's next?
+      </p>
+    </div>
+  </section>
+
+  <section id="phase-seven" class="flow-container">
+    <div id="question-4" class="flow-container__large-rectangle orange">
+      <p>
+        Do you have other short term goals?
+      </p>
+      <div class="choices">
+        <div class="choice" onclick="hideLaterPhases(this, phaseSeven); showPhase(phaseEight)">Yes</div>
+        <div class="choice" onclick="hideLaterPhases(this, phaseSeven); showPhase(phaseNine)">No</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="phase-eight" class="flow-container">
+    <div class="flow-container__small-rectangle orange arrow-down">
+      <p>
+        Find highest-interest-paying savings account and keep short-term savings in cash
+      </p>
+    </div>
+    <div class="flow-container__large-rectangle orange choice" onclick="hideLaterPhases(this, phaseEight); continueFlow(this, phaseNine)">
+      <p>
+        Great idea. Let's keep going...
+      </p>
+    </div>
+  </section>
+
+  <section id="phase-nine" class="flow-container">
+    <div id="question-5" class="flow-container__large-rectangle red">
+      <p>
+        Do you have long term goals?
+      </p>
+      <div class="choices">
+        <div class="choice" onclick="hideLaterPhases(this, phaseNine); showPhase(phaseTen)">Yes</div>
+        <div class="choice" onclick="hideLaterPhases(this, phaseNine); showPhase(endpointOne)">No (really?!)</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="endpoint-one" class="flow-container">
+    <div class="flow-container__small-rectangle">
+      <p>
+        Congrats. Increase your discretionary spending budget and enjoy your money!
+        <br><br>Don't know what to buy? Check out <a href="https://deadwallet.com" target="_blank" title="Dead Wallet: Things you didn't know you wanted">Dead Wallet</a> for some spending ideas
+      </p>
+    </div>
+  </section>
+
+  <section id="phase-ten" class="flow-container">
+    <div id="question-6" class="flow-container__large-rectangle red">
+      <p>
+        Does your goal happen before you can spend pension funds?<br>(~58 years old)
+      </p>
+      <div class="choices">
+        <div class="choice" onclick="hideLaterPhases(this, phaseTen); showPhase(phaseFifteen)">Yes</div>
+        <div class="choice" onclick="hideLaterPhases(this, phaseTen); showPhase(phaseEleven)">No</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="phase-eleven" class="flow-container">
+    <div id="question-7" class="flow-container__large-rectangle red">
+      <p>
+        Is the <a href="https://ukpersonal.finance/fees/" target="_blank" title="More information on investment and pension fees">total cost</a> of your workplace pension ≤ 0.5% PA?
+      </p>
+      <div class="choices">
+        <div class="choice" onclick="hideLaterPhases(this, phaseEleven); showPhase(phaseThirteen)">Yes</div>
+        <div class="choice" onclick="hideLaterPhases(this, phaseEleven); showPhase(phaseTwelve)">No</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="phase-twelve" class="flow-container">
+    <div class="flow-container__small-rectangle red arrow-down">
+      <p>
+        Open a SIPP and invest in low-cost <a href="https://ukpersonal.finance/diy-global-tracker/" title="DIY Global Tracker" target="_blank">global index trackers</a>
+        <br><br>
+        (If in 40%+ tax bracket, claim additional relief)
+      </p>
+    </div>
+   <div id="question-8" class="flow-container__large-rectangle red">
+      <p>
+        Pension full or on track for £1m before retirement?
+      </p>
+      <div class="choices">
+        <div class="choice" onclick="hideLaterPhases(this, phaseTwelve); showPhase(phaseFifteen)">Yes</div>
+        <div class="choice" onclick="hideLaterPhases(this, phaseTwelve); showPhase(phaseFourteen)">No</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="phase-thirteen" class="flow-container">
+    <div class="flow-container__small-rectangle red arrow-down">
+      <p>
+        Additional contributions to company pension
+        <br><br>
+        (If in 40%+ tax bracket, claim additional relief)
+      </p>
+    </div>
+    <div id="question-9" class="flow-container__large-rectangle red">
+      <p>
+        Pension full or on track for £1m before retirement?
+      </p>
+      <div class="choices">
+        <div class="choice" onclick="hideLaterPhases(this, phaseThirteen); showPhase(phaseFifteen)">Yes</div>
+        <div class="choice" onclick="hideLaterPhases(this, phaseThirteen); showPhase(phaseFourteen)">No</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="phase-fourteen" class="flow-container">
+    <div id="question-10" class="flow-container__large-rectangle red">
+      <p>
+        Are you on track for your retirement goal?
+      </p>
+      <div class="choices">
+        <div class="choice" onclick="hideLaterPhases(this, phaseFourteen); showPhase(endpointTwo)">Yes</div>
+        <div class="choice" onclick="hideLaterPhases(this, phaseFourteen); showPhase(phaseFourteenB)">No</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="phase-fourteen-a" class="flow-container">
+    <div id="question-11" class="flow-container__large-rectangle red">
+      <p>
+        Do you have any other goals?
+      </p>
+      <div class="choices">
+        <div class="choice" onclick="hideLaterPhases(this, phaseNine); showPhase(phaseTen)">Yes</div>
+        <div class="choice" onclick="hideLaterPhases(this, phaseFourteenA); showPhase(endpointTwo)">Nope!</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="phase-fourteen-b" class="flow-container">
+    <div id="question-12" class="flow-container__large-rectangle red">
+      <p>
+        Buy the same things in your S&amp;S ISA, but in a taxable account and harvest dividend/CGT allowance
+      </p>
+      <div class="choices">
+        <div class="choice" onclick="hideLaterPhases(this, phaseFourteenB); showPhase(endpointTwo)">Sounds like a plan! Anything else?</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="endpoint-two" class="flow-container">
+    <div class="flow-container__small-rectangle">
+      <p>
+        Well done! If you have no other goals, you can increase your discretionary spending budget and enjoy your money.
+        <br><br>Don't know what to buy? Check out <a href="https://deadwallet.com" target="_blank" title="Dead Wallet: Things you didn't know you wanted">Dead Wallet</a> for some spending ideas
+      </p>
+    </div>
+  </section>
+
+  <section id="phase-fifteen" class="flow-container">
+    <div class="flow-container__small-rectangle red arrow-down">
+      <p>
+        Combine S&amp;S ISA with pensions
+      </p>
+    </div>
+    <div class="flow-container__small-rectangle red arrow-down">
+      <p>
+        Invest in low-cost global index trackers.
+        Buy the same things in your S&amp;S ISA but in a taxable account harvest dividend / CGT allowance
+      </p>
+    </div>
+    <div class="flow-container__small-rectangle red">
+      <p>
+        Consider <a href="https://ukpersonal.finance/lisa/" target="_blank" title="Find out more about Lifetime ISAs">S&amp;S LISA</a> in certain niche circumstances
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="disclaimer">
+      <p>
+        The <a href="https://www.reddit.com/r/UKPersonalFinance/wiki/index" title="UKPersonalFinance Wiki" target="_blank">UKPersonalFinance Wiki</a> is a great place to start on your personal finance journey.
+      </p>
+      <p>
+        <em>This flowchart is for informational purposes only and should not be mistaken for, or replace, financial advice or guidance. The author assumes no liability for this. Always do your own research.</em>
+      </p>
+    </div>
+
+    <div class="copyright">
+      <p>
+        Made by <a href="https://marcusmichaels.com" title="Made by Marcus" target="_blank">Marcus Michaels</a>. Inspired by the original <a href="https://flowchart.ukpersonal.finance/" target="_blank" title="FIRE UK Flowchart">UKPersonalFinance Flowchart</a> – with thanks to <a href="https://www.reddit.com/r/UKPersonalFinance/" target="_blank" title="UKPersonalFinance on Reddit">r/UKPersonalFinance</a> &amp; <a href="https://www.reddit.com/r/FIREUK/" target="_blank" title="FIREUK on Reddit">r/FIREUK</a>
+      </p>
+      <p>Contribute to this project on <a href="https://github.com/marcusmichaels/personal-finance-flowchart" target="_blank" title="Contribute to this project on GitHub">GitHub</a></p>
+    </div>
+  </footer>
+</body>
+</html>
+
